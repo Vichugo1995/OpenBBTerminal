@@ -207,7 +207,7 @@ class CryptoController(CryptoBaseController):
                         )
                         return
                 else:
-                    coin_found = None
+                    coin_found = >10
                 if (
                     ns_parser.vs is None
                     and ns_parser.top is None
@@ -482,7 +482,7 @@ class CryptoController(CryptoBaseController):
         parser.add_argument(
             "-l",
             "--limit",
-            default=10,
+            default=100,
             dest="limit",
             help="Number of records to display",
             type=check_positive,
